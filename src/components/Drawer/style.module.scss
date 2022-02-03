@@ -1,0 +1,17 @@
+@import '/src/styles/mixins.scss';
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: left 0.2s;
+  @include breakpoint(tablet) {
+    position: static;
+  }
+}
+
+.drawerOpen {
+  left: 0;
+}

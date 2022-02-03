@@ -1,0 +1,24 @@
+$break-768: 48em;
+$break-1280: 80em;
+
+@mixin breakpoint($point) {
+    @if $point == tablet {
+        @media (min-width: $break-768) { @content; }
+    }
+
+    @else if $point == desktop {
+        @media (min-width: $break-1280) { @content; }
+    }
+
+    @else {
+        @media (min-width: $point) { @content; }
+    }
+}
+
+/*------------------------------------*\
+    breakpoint usage
+\*------------------------------------*/
+// .header {
+//     height: 100px;
+//     @include breakpoint(tablet) { height: auto; }
+// }

@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  height: 100vh;
+}
+
+.sideBarWrap {
+  max-width: 360px;
+}
+
+.contentWrap {
+  display: flex;
+  flex-grow: 1;
+}

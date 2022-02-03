@@ -1,0 +1,25 @@
+@import '/src/styles/mixins.scss';
+
+.messageList {
+  overflow-y: auto;
+  background: #E5DCD5CC;
+  background-image: url('./doodle.png');
+  background-size: 60%;
+  flex-grow: 1;
+  padding: 12px;
+  @include breakpoint(tablet) {
+    background-size: 40%;
+  }
+}
+
+.buble {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.my {
+  justify-content: flex-end;
+  width: 100%;
+}

@@ -1,0 +1,57 @@
+.dialog {
+  cursor: pointer;
+  display: flex;
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin: -8px -12px;
+  color: #09132C;
+  &.active,
+  &:hover {
+    background-color: #D1E4E8;
+  }
+}
+
+.dialogContent {
+  margin-left: 12px;
+  width: calc(100% - 72px);
+}
+
+.dialogContentHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialogContentHeaderTime {
+  color: #829C99;
+}
+
+.dialogContentFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.dialogContentFooterMessage {
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: flex-end;
+}
+
+.dialogContentFooterMessageText {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dialogContentFooterMessageCount {
+  width: clamp(30px, 30px, 30px);
+  height: 30px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  background-color: #128C7E;
+  color: #DFF6F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(40%);
+}

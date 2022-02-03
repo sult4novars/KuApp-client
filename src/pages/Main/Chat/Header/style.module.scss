@@ -1,0 +1,54 @@
+@import '/src/styles/mixins.scss';
+
+.header {
+  display: flex;
+  background-color: #F7F7FC;
+  width: 100%;
+  padding: 12px;
+}
+
+.headerBackButton {
+  display: flex;
+  align-items: center;
+  @include breakpoint(tablet) { 
+    display: none;
+  }
+}
+
+.headerAvatar {
+  margin-left: 12px;
+  @include breakpoint(tablet) { 
+    margin-left: 0;
+  }
+}
+
+.headerUserInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 8px;
+}
+
+.headerUserInformationName {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.headerUserInformationIndicators {
+  display: flex;
+  align-items: center;
+  color: #6E7FA9;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.headerUserInformationOnlineIndicator {
+  width: 8px;
+  height: 8px;
+  background-color: #128C7E;
+  border-radius: 50%;
+}
+
+.headerUserInformationOnlineLabel {
+  margin-left: 8px;
+}
